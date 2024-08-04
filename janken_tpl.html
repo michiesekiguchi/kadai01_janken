@@ -35,13 +35,14 @@
 
 // グーチョキパーの分岐
 // 固定値の定義
-const a ="#gu_btn"
-const b ="#cho_btn"
-const c ="#par_btn"
-// if関数
-    if(a=="#gu_btn"){
+const btn_click_event_1= document.getElementById('gu_btn');
+const btn_click_event_2= document.getElementById('cho_btn');
+const btn_click_event_3= document.getElementById('par_btn');
 
-//コンピューターの出した手 グーの時
+    // gu_btnがクリックされたときの処理
+// btn_click_event_1.addEventListener('click', function() {
+// if(btn_click_event_1=){}
+
 $("#gu_btn").on("click", function(){
     //1.乱数作成
     const r = Math.ceil(Math.random()*3);
@@ -73,8 +74,11 @@ $("#gu_btn").on("click", function(){
     //勝ち負けの表示処理
     $("#judgment").html(view_2);
 });
+// });
 
-    }else if(b=="#cho_btn"){ 
+// btn_click_event_2.addEventListener('click', function() {
+//} else if (){
+
 //コンピューターの出した手 チョキの時
 $("#tyoki.png").on("click", function(){
     //1.乱数作成
@@ -107,9 +111,12 @@ $("#tyoki.png").on("click", function(){
     //勝ち負けの表示処理
     $("#judgment").html(view_2);
 });
+// });
 
-    }else if(c=="#pa.png"){
 //コンピューターの出した手 パーの時
+// btn_click_event_3.addEventListener('click', function() {
+//} else(btn_click_event_3=){}
+
 $("#pa.png").on("click", function(){
     //1.乱数作成
     const r = Math.ceil(Math.random()*3);
@@ -141,7 +148,7 @@ $("#pa.png").on("click", function(){
     //勝ち負けの表示処理
     $("#judgment").html(view_2);
 });
-        }
+// });
 
 
 
