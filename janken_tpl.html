@@ -35,10 +35,6 @@
 
 // グーチョキパーの分岐
 // 固定値の定義
-const btn_click_event_1= document.getElementById('gu_btn');
-const btn_click_event_2= document.getElementById('cho_btn');
-const btn_click_event_3= document.getElementById('par_btn');
-
     // gu_btnがクリックされたときの処理
 // btn_click_event_1.addEventListener('click', function() {
 // if(btn_click_event_1=){}
@@ -80,7 +76,7 @@ $("#gu_btn").on("click", function(){
 //} else if (){
 
 //コンピューターの出した手 チョキの時
-$("#tyoki.png").on("click", function(){
+$("#cho_btn").on("click", function(){
     //1.乱数作成
     const r = Math.ceil(Math.random()*3);
     //2.if分岐処理
@@ -117,7 +113,7 @@ $("#tyoki.png").on("click", function(){
 // btn_click_event_3.addEventListener('click', function() {
 //} else(btn_click_event_3=){}
 
-$("#pa.png").on("click", function(){
+$("#par_btn").on("click", function(){
     //1.乱数作成
     const r = Math.ceil(Math.random()*3);
     //2.if分岐処理
